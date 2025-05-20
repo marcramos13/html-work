@@ -39,23 +39,72 @@ form {
   form button:hover {
     background-color: #0056b3;
   }
-  nav ul {
-    display: flex;
+  /* Menú de navegación */
+nav {
+  background-color: #222;
+  padding: 1rem;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.activo,
+nav a:hover {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    list-style: none;
-    justify-content: center;
-    padding: 0;
+    padding: 1rem;
+    text-align: center;
   }
   
-  nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 0.5rem 1rem;
+  .galeria figure {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s ease;
   }
   
-  nav a.activo {
-    background-color: #007bff;
-    color: white;
-    border-radius: 4px;
+  .galeria figure:hover {
+    transform: scale(1.03);
   }
-    
+  
+  .galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }      
