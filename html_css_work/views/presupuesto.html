@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presupuesto</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <h2>Solicita tu presupuesto</h2>
+
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="50" />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="Ej: 612345678" />
+
+      <label for="solicitud">Describe tu solicitud:</label>
+      <textarea id="solicitud" name="solicitud" rows="5" required></textarea>
+
+      <label>
+        <input type="checkbox" id="privacidad" name="privacidad" required />
+        Acepto la política de privacidad
+      </label>
+
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tu Empresa | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
