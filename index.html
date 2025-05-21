@@ -4,22 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inicio</title>
+
+  <!-- Enlace al archivo de estilos CSS externo -->
   <link rel="stylesheet" href="css/estilos.css" />
+  <!-- Fuente temática (usada en frase final) -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-          MasterDeck
-        </div>
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html" class="activo">Inicio</a></li>
-            <li><a href="views/productos.html">Productos</a></li>
-            <li><a href="views/presupuesto.html">Presupuesto</a></li>
-            <li><a href="views/contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>      
+  <header>
+    <div class="logo">
+      MasterDeck
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="views/productos.html">Productos</a></li>
+        <li><a href="views/presupuesto.html">Presupuesto</a></li>
+        <li><a href="views/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section>
@@ -29,17 +35,42 @@
 
     <section>
       <h2>Sobre Nosotros</h2>
-      <p>Somos una empresa dedicada a la venta de cartas Pokémon, ofrecemos los mejores precios del mercado.</p>
+      <p>
+        MasterDeck nace de la pasión por el coleccionismo y la emoción del universo Pokémon. Nos especializamos en cartas
+        Pokémon originales, ediciones limitadas, productos sellados y artículos exclusivos para jugadores y coleccionistas.
+      </p>
+      <p>
+        Nos esforzamos por ofrecer productos 100% auténticos, precios competitivos y una atención al cliente cercana y rápida.
+        Tanto si estás empezando como si llevas años en el mundo TCG, en MasterDeck encontrarás lo que buscas.
+      </p>
     </section>
 
     <section>
       <h2>Servicios</h2>
       <ul>
-        <li>Venta de cartas</li>
-        <li>Venta de cajas y mystery packs</li>
-        <li>Gradear cartas</li>
+        <li>Venta de cartas individuales y colecciones completas</li>
+        <li>Productos sellados: sobres, cajas elite trainer, latas y más</li>
+        <li>Mystery Packs con cartas sorpresa</li>
+        <li>Servicio de envío protegido para cartas valiosas</li>
+        <li>Asesoramiento para gradear tus cartas y preparar envíos a PSA/CGC</li>
       </ul>
     </section>
+
+    <section class="destacado">
+      <strong>¡Novedad!</strong> Ya están disponibles los sobres de la colección "Fuerzas Temporales" y la esperada caja especial de la colección 151. ¡Hazte con ellas antes de que se agoten!
+    </section>
+
+    <section>
+      <h2 style="text-align: center;">Lo más vendido</h2>
+      <div class="galeria-mini">
+        <img src="img/producto1.jpg" alt="Escarlata y Púrpura" />
+        <img src="img/producto2.jpg" alt="Fuerzas Temporales" />
+        <img src="img/producto3.jpg" alt="Caja Astral Radiance" />
+        <img src="img/producto4.jpg" alt="Caja 151" />
+      </div>
+    </section>
+
+    <div class="frase-poke">¡Hazte con todas!</div>
   </main>
 
   <footer>
@@ -49,6 +80,6 @@
       <a href="#">Política de privacidad</a> |
       <a href="#">Instagram</a>
     </p>
-  </footer>  
+  </footer>
 </body>
 </html>
